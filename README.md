@@ -75,8 +75,30 @@ Startup Times should only be measured with a `Release` configuration. To measure
 
 ## Application Size
 - [Enable d8](https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/).
-- [Enable ProGuard](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/release-prep/proguard) or [R8](https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/).
+- [Enable ProGuard](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/release-prep/proguard) or [r8](https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/).
 - [Create an Android App Bundle](https://github.com/xamarin/xamarin-android/blob/master/Documentation/guides/app-bundles.md).
+
+Within a .csproj, add the following properties to your release configuration:
+```
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "> 
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+</PropertyGroup>
+```
+
+Now create an Android App Bundle via the command line:
+
+```
+msbuild -restore AndroidApp.csproj
+  -t:SignAndroidPackage
+  -p:Configuration=Release
+  -p:AndroidKeyStore=True
+  -p:AndroidSigningKeyStore=com.contoso.keystore
+  -p:AndroidSigningStorePass=password
+  -p:AndroidSigningKeyAlias=keyAlias
+  -p:AndroidSigningKeyPass=password
+```
 
 Application size should be measured with a `Release` configuration and signed package. To measure the perceived app download size, you can use [Android Studio's APK Analyzer](https://developer.android.com/studio/build/apk-analyzer) or with the [following command](https://developer.android.com/studio/command-line/apkanalyzer) in your `Android SDK/tools/bin` location:
 
