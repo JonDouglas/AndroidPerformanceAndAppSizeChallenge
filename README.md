@@ -27,7 +27,7 @@ Build Times should only be measured with a `Debug` configuration. To measure the
 
 **Bonus:** If you can include a full MSBuild Output or MSBuild BinLog, this will help us understand where time is allocated to each target and task while building your app! This will help us understand bottlenecks and where to improve in the future.
 
-**Note:** Cold Builds refer to a build that does not inclue a `bin/obj` folder. Incremental Builds refer to a build that included a change such as to XAML or C# code and deploying your application.
+**Note:** To do a **cold build**, `Clean` your project prior to building. To do an **incremental build**, change a single piece of code (XAML / C# / etc) and bil
 
 **Before Cold Build Times Changes:**
 ```
