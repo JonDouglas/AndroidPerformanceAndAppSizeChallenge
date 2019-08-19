@@ -1,5 +1,5 @@
 ---
-name: "\U0001F60E Build Performance, Startup Performance, and App Size"
+name: "\U0001F642 Build Performance, Startup Performance, and App Size"
 about: Provide your app's build performance, startup performance, and app size for
   swag!
 title: ''
