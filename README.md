@@ -23,7 +23,11 @@ Within a .csproj, add the following properties to your current configuration:
 </PropertyGroup>
 ```
 
-Build Times should only be measured with a `Debug` configuration. To measure the performance, enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/) to provide the time elapsed. **Bonus:** If you can include a full MSBuild Output or MSBuild BinLog, this will help us understand where time is allocated to each target and task while building your app! This will help us understand bottlenecks and where to improve in the future.
+Build Times should only be measured with a `Debug` configuration. To measure the performance, enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/) to provide the time elapsed. 
+
+**Bonus:** If you can include a full MSBuild Output or MSBuild BinLog, this will help us understand where time is allocated to each target and task while building your app! This will help us understand bottlenecks and where to improve in the future.
+
+**Note:** Cold Builds refer to a build that does not inclue a `bin/obj` folder. Incremental Builds refer to a build that included a change such as to XAML or C# code and deploying your application.
 
 **Before Cold Build Times Changes:**
 ```
@@ -85,6 +89,8 @@ or
 ```
 apkanalyzer -h apk download-size myaab.aab
 ```
+
+**Note:** [apkanalyzer may not work on Windows](https://issuetracker.google.com/issues/75981301).
 
 **Before Application Size Changes:**
 ```
