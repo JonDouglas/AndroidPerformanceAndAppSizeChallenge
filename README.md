@@ -78,7 +78,7 @@ Startup Times should only be measured with a `Release` configuration. To measure
 - [Enable ProGuard](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/release-prep/proguard) or [R8](https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/).
 - [Create an Android App Bundle](https://github.com/xamarin/xamarin-android/blob/master/Documentation/guides/app-bundles.md).
 
-Application size should be measured with a `Release` configuration and signed package. To measure the perceived app download size, you can use [Android Studio's APK Analyzer](https://developer.android.com/studio/build/apk-analyzer) or with the [following command](https://developer.android.com/studio/command-line/apkanalyzer) in your Android SDK location:
+Application size should be measured with a `Release` configuration and signed package. To measure the perceived app download size, you can use [Android Studio's APK Analyzer](https://developer.android.com/studio/build/apk-analyzer) or with the [following command](https://developer.android.com/studio/command-line/apkanalyzer) in your `Android SDK/tools/bin` location:
 
 ```
 apkanalyzer -h apk download-size myapk.apk
