@@ -7,10 +7,18 @@ assignees: ''
 
 ---
 
-- Follow the directions found here: https://github.com/JonDouglas/AndroidPerformanceAndAppSizeChallenge
+- Follow the directions found here: https://github.com/JonDouglas/AndroidPerformanceAndAppSizeChallenge#application-size
 
 ## Application Size (Download Size)
 
 - Before Application Size Changes:
 
+```
+App download size: 0MB
+```
+
 - After Application Size Changes:
+
+```
+App download size: 0MB
+```

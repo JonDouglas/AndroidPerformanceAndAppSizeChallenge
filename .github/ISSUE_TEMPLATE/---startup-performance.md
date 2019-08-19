@@ -13,4 +13,12 @@ assignees: ''
 
 - Before Startup Tracing:
 
+```
+ActivityManager: Displayed com.companyname.yourapp/MainActivity: +0s0ms
+```
+
 - After Startup Tracing:
+
+```
+ActivityManager: Displayed com.companyname.yourapp/MainActivity: +0s0ms
+```
