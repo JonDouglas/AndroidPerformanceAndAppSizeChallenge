@@ -4,6 +4,7 @@ Use the new Xamarin.Android features and open up an issue with your results
 # Before you start
 
 1. Enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/).
+
 2. Open up the Android Device Log by going to `Tools > Android > Device Log`
 
 ## Build Times
