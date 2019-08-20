@@ -86,6 +86,8 @@ Startup Times should be measured with a `Release` configuration. To measure the 
 2019-08-19 09:37:40.504 1870-1892/? I/ActivityManager: Displayed com.companyname.startuptiming/md5984e4549386b302a2fd47914e0849f36.MainActivity: +1s760ms
 ```
 
+**Note:** The checkbox for Startup Tracing is included in Visual Studio 2019 16.3 Preview 2 and Visual Studio 2019 8.3 Preview 2.
+
 ## Application Size
 - [Enable d8](https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/).
 - [Enable ProGuard](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/release-prep/proguard) or [r8](https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/).
