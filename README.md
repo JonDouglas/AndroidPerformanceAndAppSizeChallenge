@@ -5,7 +5,15 @@ Use the new Xamarin.Android features and open up an issue with your results
 
 1. Enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/).
 
+![](Images/DiagnosticBuildOutput.png)
+
 2. Open up the Android Device Log by going to `Tools > Android > Device Log`
+
+3. Familiarize yourself with the Android Project Options Screen
+
+![](Images/ProjectSettings.png)
+
+**You're ready to begin the challenge! Pick your challenge below, or do all three!**
 
 ## Build Times
 - [Enable aapt2](https://devblogs.microsoft.com/xamarin/optimize-xamarin-android-builds/).
@@ -24,7 +32,7 @@ Within a .csproj, add the following properties to your current configuration:
 </PropertyGroup>
 ```
 
-Build Times should only be measured with a `Debug` configuration. To measure the performance, enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/) to provide the time elapsed. 
+Build Times should be measured with a `Debug` configuration. To measure the performance, enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/) to provide the time elapsed. 
 
 **Bonus:** If you can include a full MSBuild Output or MSBuild BinLog, this will help us understand where time is allocated to each target and task while building your app! This will help us understand bottlenecks and where to improve in the future.
 
@@ -62,7 +70,7 @@ Within a .csproj, add the following property to your release configuration:
 </PropertyGroup>
 ```
 
-Startup Times should only be measured with a `Release` configuration. To measure the performance, with the Android Device Log, add a filter to search for `ActivityManager: Displayed` to which you will be provided a timing of your application such as:
+Startup Times should be measured with a `Release` configuration. To measure the performance, with the Android Device Log, add a filter to search for `ActivityManager: Displayed` to which you will be provided a timing of your application such as:
 
 **Before Startup Tracing:**
 ```
