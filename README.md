@@ -3,6 +3,8 @@ Use the new Xamarin.Android features and open up an issue with your results
 
 # Before you start
 
+1. Ensure you're on at least a 16.2/8.2 version of [Visual Studio 2019](https://visualstudio.microsoft.com/vs/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac) respectfully. 
+
 1. Enable [Diagnostic MSBuild Output](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or use [MSBuild BinLog](http://msbuildlog.com/).
 
 ![](Images/DiagnosticBuildOutput.png)
