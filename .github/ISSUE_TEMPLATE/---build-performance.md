@@ -40,3 +40,5 @@ Time Elapsed 00:00:00.00
 ## Bonus
 
 - Include a [Diagnostic MSBuild Log File](https://docs.microsoft.com/en-us/xamarin/android/troubleshooting/troubleshooting#diagnostic-msbuild-output) or [MSBuild BinLog File](http://msbuildlog.com/)
+
+## Any comments / feedback for how we can improve this experience?
