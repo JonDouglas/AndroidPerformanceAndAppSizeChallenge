@@ -24,3 +24,5 @@ App download size: 0MB
 ```
 
 ## Any comments / feedback for how we can improve this experience?
+
+## Version Information (`Help -> About Visual Studio -> Copy Information`)

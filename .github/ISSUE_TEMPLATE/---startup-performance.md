@@ -24,3 +24,5 @@ ActivityManager: Displayed com.companyname.yourapp/MainActivity: +0s0ms
 ```
 
 ## Any comments / feedback for how we can improve this experience?
+
+## Version Information (`Help -> About Visual Studio -> Copy Information`)
