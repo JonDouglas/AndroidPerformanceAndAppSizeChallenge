@@ -36,8 +36,6 @@ Build Times should be measured with a `Debug` configuration. To measure the perf
 
 **Bonus:** If you can include a full MSBuild Output or MSBuild BinLog, this will help us understand where time is allocated to each target and task while building your app! This will help us understand bottlenecks and where to improve in the future.
 
-**Note:** To do a **cold build**, `Clean` your project prior to building. To do an **incremental build**, change a single piece of code (XAML / C# / etc) and deploy your project.
-
 **Before Cold Build Times Changes:**
 ```
 Time Elapsed 00:00:15.77
@@ -48,6 +46,8 @@ Time Elapsed 00:00:15.77
 Time Elapsed 00:00:14.85
 ```
 
+**Note:** To do a **cold build**, `Clean` your project prior to building.
+
 **Before Incremental Build Times Changes:**
 ```
 Time Elapsed 00:00:02.67
@@ -57,6 +57,8 @@ Time Elapsed 00:00:02.67
 ```
 Time Elapsed 00:00:02.43
 ```
+
+**Note:** To do an **incremental build**, change a single piece of code (XAML / C# / etc) and deploy your project.
 
 ## Startup Times
 
